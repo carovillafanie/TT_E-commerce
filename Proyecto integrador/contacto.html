@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/vnd.icon" href="images/M!.ico">
+</head>
+<body>
+    <header>
+       <nav>
+            <ul>
+                <li>
+                  <a href="index.html" class="nombre_marca">
+                    <strong>MUAH!</strong> Beauty
+                 </a>
+                </li>
+                <li>
+                  <a href="rostro.html">
+                    Rostro 
+                    </a>
+                </li>
+                <li>
+                  <a href="ojos.html">
+                    Ojos
+                  </a>
+                </li>
+                <li>
+                  <a href="labios.html">
+                    Labios
+                  </a>
+                </li>
+                <li>
+                  <a href="Accesorios.html">
+                    Accesorios
+                  </a>
+                </li>
+                <li>
+                  Buscar
+                </li>
+                <li>
+                  <a href="carrito.html"> <!--para mi aqui va a haber que dividirlos en 2 los que van a la derecha y los de la izq con un div o un aside maybe-->
+                    Carrito
+                    </a>
+                </li>
+                
+              </ul>
+        </nav>
+    </header>  
+    <main>
+        <h1>
+          ¡Hablemos!
+        </h1>
+        <p>Para ponerte en contacto con nosotros completá el siguiente formulario</p>
+        <fieldset>
+        <form action="https://formspree.io/f/xoveznee" method="post">
+            <label> Asunto <strong>*</strong>
+                <select name="Asunto" required>
+                    <option disabled selected>Selecciona una opción</option>
+                    <option value="Estado_pedido">Estado de mi pedido</option>
+                    <option value="Cambio_compra">Quiero hacer un cambio en mi compra</option>
+                    <option value="Devolucion">Quiero devolver mi compra</option>
+                    <option value="Otros">Otros</option>
+                </select>
+            </label>
+            <label> Nombre y Apellido
+                <input type="text" name="nombre_completo" placeholder="escribe tu nombre completo" required>
+            </label>
+            <label> Correo electrónico
+                <input type="email" name="Correo" placeholder="escribe tu mail" required>
+            </label>
+            <label>Numero de pedido
+                <input type="text" name="nro_pedido" placeholder="XXXXXX" required>
+            </label>
+            <label> Numero de telefono
+                <input type="tel" name="nro_tel" placeholder="escribe tu telefono" required>
+            </label>
+            <label>Mensaje
+                <textarea rows="4" cols="50" maxlength="200" placeholder="escribe tu mensaje de no mas de 200 caracteres"></textarea>
+            </label>
+             <button>Enviar</button>
+        </fieldset>
+        
+        </form>
+    </main>
+</body>
+</html>
